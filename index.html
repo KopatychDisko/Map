@@ -33,7 +33,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_c11b54252813eef6783f648b98f1d8e8 {
+                #map_e5015aa5b36cf66464ff4387426b3b08 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -50,19 +50,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"/>
 </head>
 <body>
     
     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
     
-            <div class="folium-map" id="map_c11b54252813eef6783f648b98f1d8e8" ></div>
+            <div class="folium-map" id="map_e5015aa5b36cf66464ff4387426b3b08" ></div>
         
 </body>
 <script>
     
     
-            var map_c11b54252813eef6783f648b98f1d8e8 = L.map(
-                "map_c11b54252813eef6783f648b98f1d8e8",
+            var map_e5015aa5b36cf66464ff4387426b3b08 = L.map(
+                "map_e5015aa5b36cf66464ff4387426b3b08",
                 {
                     center: [57.6261, 39.8845],
                     crs: L.CRS.EPSG3857,
@@ -80,7 +82,7 @@
 
         
     
-            var tile_layer_1d288c51de1f983118b5e2f448cc73dc = L.tileLayer(
+            var tile_layer_dd83acc3e1e88d392f4fc5a772c24149 = L.tileLayer(
                 "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
                 {
   "minZoom": 0,
@@ -97,10 +99,10 @@
             );
         
     
-            tile_layer_1d288c51de1f983118b5e2f448cc73dc.addTo(map_c11b54252813eef6783f648b98f1d8e8);
+            tile_layer_dd83acc3e1e88d392f4fc5a772c24149.addTo(map_e5015aa5b36cf66464ff4387426b3b08);
         
     
-            var tile_layer_14fd33b347c7db137d79fe4db34c6079 = L.tileLayer(
+            var tile_layer_b45e5f374b01ba870b0b5149cebf01ba = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -117,15 +119,15 @@
             );
         
     
-            tile_layer_14fd33b347c7db137d79fe4db34c6079.addTo(map_c11b54252813eef6783f648b98f1d8e8);
+            tile_layer_b45e5f374b01ba870b0b5149cebf01ba.addTo(map_e5015aa5b36cf66464ff4387426b3b08);
         
     
-            var tile_layer_07bd276199842c7cb24daac0716b6847 = L.tileLayer(
+            var tile_layer_c7b094c24e0cc0eba7858746c5438229 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
-            var mini_map_0bfc89510e85cfe403b6e0fb2ec7cd14 = new L.Control.MiniMap(
-                tile_layer_07bd276199842c7cb24daac0716b6847,
+            var mini_map_3c3db96042a44d50d5589115ff8f0c8a = new L.Control.MiniMap(
+                tile_layer_c7b094c24e0cc0eba7858746c5438229,
                 {
   "position": "bottomright",
   "width": 150,
@@ -140,62 +142,62 @@
   "minimized": false,
 }
             );
-            map_c11b54252813eef6783f648b98f1d8e8.addControl(mini_map_0bfc89510e85cfe403b6e0fb2ec7cd14);
+            map_e5015aa5b36cf66464ff4387426b3b08.addControl(mini_map_3c3db96042a44d50d5589115ff8f0c8a);
         
     
-            var locate_control_a6e9ae75a1dcb4099fa64030745eeed1 = L.control.locate(
+            var locate_control_4eaf9fbd5d307b2182b303593529159d = L.control.locate(
                 {}
-            ).addTo(map_c11b54252813eef6783f648b98f1d8e8);
+            ).addTo(map_e5015aa5b36cf66464ff4387426b3b08);
             
         
     
         function customFlyToBounds() {
             let bounds = L.latLngBounds([]);
-            map_c11b54252813eef6783f648b98f1d8e8.eachLayer(function(layer) {
+            map_e5015aa5b36cf66464ff4387426b3b08.eachLayer(function(layer) {
                 if (typeof layer.getBounds === 'function') {
                     bounds.extend(layer.getBounds());
                 }
             });
             if (bounds.isValid()) {
-                map_c11b54252813eef6783f648b98f1d8e8.fitBounds(bounds, {
+                map_e5015aa5b36cf66464ff4387426b3b08.fitBounds(bounds, {
   "padding": [0, 0],
 });
             }
         }
-        map_c11b54252813eef6783f648b98f1d8e8.on('overlayadd', customFlyToBounds);
+        map_e5015aa5b36cf66464ff4387426b3b08.on('overlayadd', customFlyToBounds);
         customFlyToBounds();
         
     
-            var feature_group_d135308a825e191fae8c21421ff3a01e = L.featureGroup(
+            var feature_group_00e9e86e7407a54c6642ec9414be8949 = L.featureGroup(
                 {
 }
             );
         
     
-            var polygon_25b8a1d28954f3860dc38b36acf64900 = L.polygon(
+            var polygon_c5eaaa8da33fe0cd093730532156e578 = L.polygon(
                 [[[57.63616, 39.80756], [57.654512, 39.776006], [57.648671, 39.781762], [57.652583, 39.775287], [57.648892000000004, 39.778987], [57.646357, 39.774876], [57.645089, 39.77652], [57.643271, 39.776315], [57.642058, 39.780015], [57.640129, 39.778062], [57.640294, 39.776829], [57.639748, 39.776358], [57.639581, 39.777371], [57.639122, 39.777059], [57.638677, 39.778586], [57.636987, 39.776726], [57.637808, 39.769387], [57.634753, 39.767421], [57.634837, 39.773848], [57.633404, 39.78279], [57.632081, 39.788957], [57.629765, 39.794507], [57.630206, 39.796768], [57.629049, 39.797796], [57.625685, 39.799749], [57.625299, 39.80129], [57.623259, 39.80386], [57.62166, 39.807868], [57.620998, 39.810643], [57.621108, 39.815371], [57.61813, 39.828322], [57.616365, 39.832947], [57.616365, 39.832947], [57.612559, 39.833975], [57.609636, 39.837572], [57.610298, 39.840964], [57.612314, 39.845164], [57.612279, 39.849449], [57.611931, 39.851971], [57.613121, 39.867756], [57.614377, 39.871869], [57.616381, 39.874265], [57.619929, 39.885717], [57.619358, 39.888964], [57.615584, 39.898579], [57.617299, 39.891974], [57.612122, 39.913718], [57.624803, 39.908901], [57.64057, 39.893484], [57.634727, 39.871901], [57.630537, 39.869742], [57.632191, 39.856072], [57.629214, 39.847953], [57.632577, 39.830891], [57.633349, 39.820819], [57.63616, 39.80756]]],
                 {"bubblingMouseEvents": true, "color": "#e95739", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e95739", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_d135308a825e191fae8c21421ff3a01e);
+            ).addTo(feature_group_00e9e86e7407a54c6642ec9414be8949);
         
     
-        var popup_53ef9bb62db4389c809ba7a0d460fc07 = L.popup({
+        var popup_59b4263347acb281f96d749cbbe5d973 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_f9ec089dcea40d59929eb27435b3cf2a = $(`<div id="html_f9ec089dcea40d59929eb27435b3cf2a" style="width: 100.0%; height: 100.0%;">Кировский район</div>`)[0];
-                popup_53ef9bb62db4389c809ba7a0d460fc07.setContent(html_f9ec089dcea40d59929eb27435b3cf2a);
+                var html_da449b3383001636d5f0206afb856cf9 = $(`<div id="html_da449b3383001636d5f0206afb856cf9" style="width: 100.0%; height: 100.0%;">Кировский район</div>`)[0];
+                popup_59b4263347acb281f96d749cbbe5d973.setContent(html_da449b3383001636d5f0206afb856cf9);
             
         
 
-        polygon_25b8a1d28954f3860dc38b36acf64900.bindPopup(popup_53ef9bb62db4389c809ba7a0d460fc07)
+        polygon_c5eaaa8da33fe0cd093730532156e578.bindPopup(popup_59b4263347acb281f96d749cbbe5d973)
         ;
 
         
     
     
-            polygon_25b8a1d28954f3860dc38b36acf64900.bindTooltip(
+            polygon_c5eaaa8da33fe0cd093730532156e578.bindTooltip(
                 `<div>
                      Кировский район
                  </div>`,
@@ -205,30 +207,30 @@
             );
         
     
-            var polygon_61626febf193e2c268d8df176f7cd3eb = L.polygon(
+            var polygon_88472f17104dcd04d717f9f4720e86ed = L.polygon(
                 [[[57.629232, 39.848236], [57.632671, 39.830521], [57.63337, 39.821218], [57.636152, 39.807486], [57.641512, 39.805426], [57.644662, 39.814505], [57.64368, 39.853641], [57.652925, 39.845348], [57.666254, 39.842503], [57.663679, 39.846241], [57.661185, 39.855167], [57.660921, 39.85901], [57.66282, 39.866], [57.657382, 39.873095], [57.654069, 39.879046], [57.640817, 39.893312], [57.634679, 39.871875], [57.630587, 39.869739], [57.631774, 39.857303], [57.632224, 39.855854], [57.629232, 39.848236]]],
                 {"bubblingMouseEvents": true, "color": "#a50026", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a50026", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_d135308a825e191fae8c21421ff3a01e);
+            ).addTo(feature_group_00e9e86e7407a54c6642ec9414be8949);
         
     
-        var popup_ad7bb38a74379e2d145cc9891592a77a = L.popup({
+        var popup_028b7d1ed34dbd3ff3f748418b607a21 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_57d6b0175281911f21a4a5a43570142b = $(`<div id="html_57d6b0175281911f21a4a5a43570142b" style="width: 100.0%; height: 100.0%;">Ленинский район</div>`)[0];
-                popup_ad7bb38a74379e2d145cc9891592a77a.setContent(html_57d6b0175281911f21a4a5a43570142b);
+                var html_d11974e8864276a6882c648a651aa1d3 = $(`<div id="html_d11974e8864276a6882c648a651aa1d3" style="width: 100.0%; height: 100.0%;">Ленинский район</div>`)[0];
+                popup_028b7d1ed34dbd3ff3f748418b607a21.setContent(html_d11974e8864276a6882c648a651aa1d3);
             
         
 
-        polygon_61626febf193e2c268d8df176f7cd3eb.bindPopup(popup_ad7bb38a74379e2d145cc9891592a77a)
+        polygon_88472f17104dcd04d717f9f4720e86ed.bindPopup(popup_028b7d1ed34dbd3ff3f748418b607a21)
         ;
 
         
     
     
-            polygon_61626febf193e2c268d8df176f7cd3eb.bindTooltip(
+            polygon_88472f17104dcd04d717f9f4720e86ed.bindTooltip(
                 `<div>
                      Ленинский район
                  </div>`,
@@ -238,30 +240,30 @@
             );
         
     
-            var polygon_97190f124012b9f9fdd97859295ca53c = L.polygon(
+            var polygon_94a33e261ddbac103e7565c05579b84f = L.polygon(
                 [[[57.62, 39.89], [57.62, 39.9], [57.63, 39.9], [57.63, 39.89], [57.62, 39.89]]],
                 {"bubblingMouseEvents": true, "color": "#a50026", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a50026", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_d135308a825e191fae8c21421ff3a01e);
+            ).addTo(feature_group_00e9e86e7407a54c6642ec9414be8949);
         
     
-        var popup_69de5d762f74713f3866ea0fee9eca40 = L.popup({
+        var popup_3e1833568af07489a820c0a25977f036 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_ad04411ae054b45ff00a9cda5e2cc913 = $(`<div id="html_ad04411ae054b45ff00a9cda5e2cc913" style="width: 100.0%; height: 100.0%;">Дзержиский район</div>`)[0];
-                popup_69de5d762f74713f3866ea0fee9eca40.setContent(html_ad04411ae054b45ff00a9cda5e2cc913);
+                var html_03af8bce0a428e0bb06ef2c7cac1920f = $(`<div id="html_03af8bce0a428e0bb06ef2c7cac1920f" style="width: 100.0%; height: 100.0%;">Дзержиский район</div>`)[0];
+                popup_3e1833568af07489a820c0a25977f036.setContent(html_03af8bce0a428e0bb06ef2c7cac1920f);
             
         
 
-        polygon_97190f124012b9f9fdd97859295ca53c.bindPopup(popup_69de5d762f74713f3866ea0fee9eca40)
+        polygon_94a33e261ddbac103e7565c05579b84f.bindPopup(popup_3e1833568af07489a820c0a25977f036)
         ;
 
         
     
     
-            polygon_97190f124012b9f9fdd97859295ca53c.bindTooltip(
+            polygon_94a33e261ddbac103e7565c05579b84f.bindTooltip(
                 `<div>
                      Дзержиский район
                  </div>`,
@@ -271,30 +273,30 @@
             );
         
     
-            var polygon_1a012fa5e78ea6dd02211530000babf5 = L.polygon(
+            var polygon_cbe6c3aef5eb61dac6aa6001b51dc338 = L.polygon(
                 [[[57.636044, 39.80747], [57.648029, 39.782196], [57.654876, 39.775582], [57.666979, 39.76509], [57.682864, 39.746615], [57.6963, 39.744106], [57.699597, 39.746159], [57.701307, 39.758931], [57.712661, 39.758475], [57.718886, 39.745018], [57.720961, 39.747527], [57.722303, 39.739088], [57.718032, 39.729965], [57.726818, 39.72928], [57.730113, 39.740229], [57.737555, 39.730649], [57.743531, 39.731561], [57.746458, 39.764405], [57.73914, 39.771932], [57.739506, 39.779231], [57.711073999999996, 39.7936], [57.663067, 39.865447], [57.660745, 39.857692], [57.666123, 39.842182], [57.653898, 39.845147], [57.643626, 39.853814], [57.644605, 39.812303], [57.641669, 39.805689], [57.636044, 39.80747]]],
                 {"bubblingMouseEvents": true, "color": "#a50026", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a50026", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_d135308a825e191fae8c21421ff3a01e);
+            ).addTo(feature_group_00e9e86e7407a54c6642ec9414be8949);
         
     
-        var popup_d3e954b11480dd1b966d2345f3a92bdc = L.popup({
+        var popup_1154761aa3935cc14d96631f62ea073f = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_2f3908c411190885d665b298baf41b66 = $(`<div id="html_2f3908c411190885d665b298baf41b66" style="width: 100.0%; height: 100.0%;">Заволжский район</div>`)[0];
-                popup_d3e954b11480dd1b966d2345f3a92bdc.setContent(html_2f3908c411190885d665b298baf41b66);
+                var html_383afcc4d74c51e5586b825f8d34d534 = $(`<div id="html_383afcc4d74c51e5586b825f8d34d534" style="width: 100.0%; height: 100.0%;">Заволжский район</div>`)[0];
+                popup_1154761aa3935cc14d96631f62ea073f.setContent(html_383afcc4d74c51e5586b825f8d34d534);
             
         
 
-        polygon_1a012fa5e78ea6dd02211530000babf5.bindPopup(popup_d3e954b11480dd1b966d2345f3a92bdc)
+        polygon_cbe6c3aef5eb61dac6aa6001b51dc338.bindPopup(popup_1154761aa3935cc14d96631f62ea073f)
         ;
 
         
     
     
-            polygon_1a012fa5e78ea6dd02211530000babf5.bindTooltip(
+            polygon_cbe6c3aef5eb61dac6aa6001b51dc338.bindTooltip(
                 `<div>
                      Заволжский район
                  </div>`,
@@ -304,30 +306,30 @@
             );
         
     
-            var polygon_129b079181b1d008bf74a1813b1f0476 = L.polygon(
+            var polygon_fb2e04f0bd4597907a8a163332096c9c = L.polygon(
                 [[[57.61, 39.88], [57.61, 39.89], [57.62, 39.89], [57.62, 39.88], [57.61, 39.88]]],
                 {"bubblingMouseEvents": true, "color": "#a50026", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a50026", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_d135308a825e191fae8c21421ff3a01e);
+            ).addTo(feature_group_00e9e86e7407a54c6642ec9414be8949);
         
     
-        var popup_06184f8741685164f31af3ade02007a6 = L.popup({
+        var popup_ce017700035fd0e2f000a263dbee9acf = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_9d7bdf9d0bc94bee81ce505421463fa5 = $(`<div id="html_9d7bdf9d0bc94bee81ce505421463fa5" style="width: 100.0%; height: 100.0%;">Красноперекопский район</div>`)[0];
-                popup_06184f8741685164f31af3ade02007a6.setContent(html_9d7bdf9d0bc94bee81ce505421463fa5);
+                var html_9099443704ff669fc7f269de5ceada43 = $(`<div id="html_9099443704ff669fc7f269de5ceada43" style="width: 100.0%; height: 100.0%;">Красноперекопский район</div>`)[0];
+                popup_ce017700035fd0e2f000a263dbee9acf.setContent(html_9099443704ff669fc7f269de5ceada43);
             
         
 
-        polygon_129b079181b1d008bf74a1813b1f0476.bindPopup(popup_06184f8741685164f31af3ade02007a6)
+        polygon_fb2e04f0bd4597907a8a163332096c9c.bindPopup(popup_ce017700035fd0e2f000a263dbee9acf)
         ;
 
         
     
     
-            polygon_129b079181b1d008bf74a1813b1f0476.bindTooltip(
+            polygon_fb2e04f0bd4597907a8a163332096c9c.bindTooltip(
                 `<div>
                      Красноперекопский район
                  </div>`,
@@ -337,30 +339,30 @@
             );
         
     
-            var polygon_55ce9490742d7167f4f893f7c1264abf = L.polygon(
+            var polygon_7242116534ed6dfa132a7177b18c4a36 = L.polygon(
                 [[[57.61, 39.89], [57.61, 39.9], [57.62, 39.9], [57.62, 39.89], [57.61, 39.89]]],
                 {"bubblingMouseEvents": true, "color": "#a50026", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a50026", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_d135308a825e191fae8c21421ff3a01e);
+            ).addTo(feature_group_00e9e86e7407a54c6642ec9414be8949);
         
     
-        var popup_f1d201b895ea5f6147f23f38d13ac8e5 = L.popup({
+        var popup_000a5de4d9490f4710069ae20ac57449 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_c14786d8e197fac5227c5e5ad4f4531f = $(`<div id="html_c14786d8e197fac5227c5e5ad4f4531f" style="width: 100.0%; height: 100.0%;">Фрунзенсикй район</div>`)[0];
-                popup_f1d201b895ea5f6147f23f38d13ac8e5.setContent(html_c14786d8e197fac5227c5e5ad4f4531f);
+                var html_e9dc545d46ed9d09fc1440013d523fa8 = $(`<div id="html_e9dc545d46ed9d09fc1440013d523fa8" style="width: 100.0%; height: 100.0%;">Фрунзенсикй район</div>`)[0];
+                popup_000a5de4d9490f4710069ae20ac57449.setContent(html_e9dc545d46ed9d09fc1440013d523fa8);
             
         
 
-        polygon_55ce9490742d7167f4f893f7c1264abf.bindPopup(popup_f1d201b895ea5f6147f23f38d13ac8e5)
+        polygon_7242116534ed6dfa132a7177b18c4a36.bindPopup(popup_000a5de4d9490f4710069ae20ac57449)
         ;
 
         
     
     
-            polygon_55ce9490742d7167f4f893f7c1264abf.bindTooltip(
+            polygon_7242116534ed6dfa132a7177b18c4a36.bindTooltip(
                 `<div>
                      Фрунзенсикй район
                  </div>`,
@@ -370,40 +372,40 @@
             );
         
     
-            feature_group_d135308a825e191fae8c21421ff3a01e.addTo(map_c11b54252813eef6783f648b98f1d8e8);
+            feature_group_00e9e86e7407a54c6642ec9414be8949.addTo(map_e5015aa5b36cf66464ff4387426b3b08);
         
     
-            var marker_cluster_091288ac51c49d0ba2c446bdb6594579 = L.markerClusterGroup(
+            var marker_cluster_4459b65d0a2a6b9b9e8d2749f09f0480 = L.markerClusterGroup(
                 {
 }
             );
         
     
-            var marker_0120f11a2cd1e10512fe3425a63bcff8 = L.marker(
+            var marker_092bd1d1888d0e6605c199074849b588 = L.marker(
                 [57.629377, 39.890388],
                 {
 }
-            ).addTo(marker_cluster_091288ac51c49d0ba2c446bdb6594579);
+            ).addTo(marker_cluster_4459b65d0a2a6b9b9e8d2749f09f0480);
         
     
-        var popup_4c2b10080a6166538fea9f841f4a771f = L.popup({
+        var popup_dd3f84a1b4e7699ef4d149753bc3056a = L.popup({
   "maxWidth": 150,
 });
 
         
             
-                var html_e4e99818e9f7f7cff5a1d8d62eec77a1 = $(`<div id="html_e4e99818e9f7f7cff5a1d8d62eec77a1" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Министерство здравоохранения и фармации</h4>             <p><b>📍 Адрес:</b> Ул. Советская 11/9</p>             <p>Здание историческое и ввиду этого не оборудовано для людей с ОВЗ</p>             <p><b>Оценка:</b> 0/10 <span style="color:gold; font-size:1.2em;">☆☆☆☆☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/1.jpg" data-lightbox="gallery" data-title="Министерство здравоохранения и фармации">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/2.jpg" data-lightbox="gallery" data-title="Министерство здравоохранения и фармации">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
-                popup_4c2b10080a6166538fea9f841f4a771f.setContent(html_e4e99818e9f7f7cff5a1d8d62eec77a1);
+                var html_1767083d183a8a049a31cb3f846d4f5a = $(`<div id="html_1767083d183a8a049a31cb3f846d4f5a" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Министерство здравоохранения и фармации</h4>             <p><b>📍 Адрес:</b> Ул. Советская 11/9</p>             <p>Здание историческое и ввиду этого не оборудовано для людей с ОВЗ</p>             <p><b>Оценка:</b> 0/10 <span style="color:gold; font-size:1.2em;">☆☆☆☆☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/1.jpg" data-lightbox="gallery" data-title="Министерство здравоохранения и фармации">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/2.jpg" data-lightbox="gallery" data-title="Министерство здравоохранения и фармации">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
+                popup_dd3f84a1b4e7699ef4d149753bc3056a.setContent(html_1767083d183a8a049a31cb3f846d4f5a);
             
         
 
-        marker_0120f11a2cd1e10512fe3425a63bcff8.bindPopup(popup_4c2b10080a6166538fea9f841f4a771f)
+        marker_092bd1d1888d0e6605c199074849b588.bindPopup(popup_dd3f84a1b4e7699ef4d149753bc3056a)
         ;
 
         
     
     
-            marker_0120f11a2cd1e10512fe3425a63bcff8.bindTooltip(
+            marker_092bd1d1888d0e6605c199074849b588.bindTooltip(
                 `<div>
                      Министерство здравоохранения и фармации
                  </div>`,
@@ -413,31 +415,31 @@
             );
         
     
-            var marker_220c2cdb94a99e227ff054ff5ecb8eac = L.marker(
+            var marker_b53b62b0f8620855b6fc7aa3432cb256 = L.marker(
                 [57.62848, 39.892051],
                 {
 }
-            ).addTo(marker_cluster_091288ac51c49d0ba2c446bdb6594579);
+            ).addTo(marker_cluster_4459b65d0a2a6b9b9e8d2749f09f0480);
         
     
-        var popup_70fa5206913c8a2737ace148d9f077fc = L.popup({
+        var popup_013c043e989353d788ab2cbf32413988 = L.popup({
   "maxWidth": 150,
 });
 
         
             
-                var html_a23aa806ff7760b2bf79e458ce3cc8b8 = $(`<div id="html_a23aa806ff7760b2bf79e458ce3cc8b8" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Министерство образования</h4>             <p><b>📍 Адрес:</b> Советская улица, 7</p>             <p>Есть кнопка для вызова персонала. Здание историческое, дверь очень тяжёлая</p>             <p><b>Оценка:</b> 2/10 <span style="color:gold; font-size:1.2em;">★★☆☆☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/1.jpg" data-lightbox="gallery" data-title="Министерство образования">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/2.jpg" data-lightbox="gallery" data-title="Министерство образования">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
-                popup_70fa5206913c8a2737ace148d9f077fc.setContent(html_a23aa806ff7760b2bf79e458ce3cc8b8);
+                var html_d90c4f0cd54f6b90c322e47f9df79179 = $(`<div id="html_d90c4f0cd54f6b90c322e47f9df79179" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Министерство образования</h4>             <p><b>📍 Адрес:</b> Советская улица, 7</p>             <p>Есть кнопка для вызова персонала. Здание историческое, дверь очень тяжёлая</p>             <p><b>Оценка:</b> 2/10 <span style="color:gold; font-size:1.2em;">★★☆☆☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/1.jpg" data-lightbox="gallery" data-title="Министерство образования">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/2.jpg" data-lightbox="gallery" data-title="Министерство образования">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
+                popup_013c043e989353d788ab2cbf32413988.setContent(html_d90c4f0cd54f6b90c322e47f9df79179);
             
         
 
-        marker_220c2cdb94a99e227ff054ff5ecb8eac.bindPopup(popup_70fa5206913c8a2737ace148d9f077fc)
+        marker_b53b62b0f8620855b6fc7aa3432cb256.bindPopup(popup_013c043e989353d788ab2cbf32413988)
         ;
 
         
     
     
-            marker_220c2cdb94a99e227ff054ff5ecb8eac.bindTooltip(
+            marker_b53b62b0f8620855b6fc7aa3432cb256.bindTooltip(
                 `<div>
                      Министерство образования
                  </div>`,
@@ -447,31 +449,31 @@
             );
         
     
-            var marker_fe38bc8bd438c712e344627573356bec = L.marker(
+            var marker_b61bc54ef3f27a66f65527d41a5dfa32 = L.marker(
                 [57.626349, 39.890393],
                 {
 }
-            ).addTo(marker_cluster_091288ac51c49d0ba2c446bdb6594579);
+            ).addTo(marker_cluster_4459b65d0a2a6b9b9e8d2749f09f0480);
         
     
-        var popup_6e1803b21224113ab782ea5502afee12 = L.popup({
+        var popup_e7880540c23f56c98a2474eda5eb0bd1 = L.popup({
   "maxWidth": 150,
 });
 
         
             
-                var html_f760febadca4041b2af31e938c232c16 = $(`<div id="html_f760febadca4041b2af31e938c232c16" style="width: 100.0%; height: 100.0%;">         <div>             <h4>ЯрГУ им. П. Г. Демидова, корпус № 2</h4>             <p><b>📍 Адрес:</b> Ул. Кирова 8/10</p>             <p>Историческое здание, но есть кнопка для вызова персонала. Опять тяжёлая дверь</p>             <p><b>Оценка:</b> 3/10 <span style="color:gold; font-size:1.2em;">★★★☆☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/1.jpg" data-lightbox="gallery" data-title="ЯрГУ им. П. Г. Демидова, корпус № 2">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/2.jpg" data-lightbox="gallery" data-title="ЯрГУ им. П. Г. Демидова, корпус № 2">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
-                popup_6e1803b21224113ab782ea5502afee12.setContent(html_f760febadca4041b2af31e938c232c16);
+                var html_ae63cbeca9025c184cd2d77742dc961e = $(`<div id="html_ae63cbeca9025c184cd2d77742dc961e" style="width: 100.0%; height: 100.0%;">         <div>             <h4>ЯрГУ им. П. Г. Демидова, корпус № 2</h4>             <p><b>📍 Адрес:</b> Ул. Кирова 8/10</p>             <p>Историческое здание, но есть кнопка для вызова персонала. Опять тяжёлая дверь</p>             <p><b>Оценка:</b> 3/10 <span style="color:gold; font-size:1.2em;">★★★☆☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/1.jpg" data-lightbox="gallery" data-title="ЯрГУ им. П. Г. Демидова, корпус № 2">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/2.jpg" data-lightbox="gallery" data-title="ЯрГУ им. П. Г. Демидова, корпус № 2">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
+                popup_e7880540c23f56c98a2474eda5eb0bd1.setContent(html_ae63cbeca9025c184cd2d77742dc961e);
             
         
 
-        marker_fe38bc8bd438c712e344627573356bec.bindPopup(popup_6e1803b21224113ab782ea5502afee12)
+        marker_b61bc54ef3f27a66f65527d41a5dfa32.bindPopup(popup_e7880540c23f56c98a2474eda5eb0bd1)
         ;
 
         
     
     
-            marker_fe38bc8bd438c712e344627573356bec.bindTooltip(
+            marker_b61bc54ef3f27a66f65527d41a5dfa32.bindTooltip(
                 `<div>
                      ЯрГУ им. П. Г. Демидова, корпус № 2
                  </div>`,
@@ -481,28 +483,59 @@
             );
         
     
-            marker_cluster_091288ac51c49d0ba2c446bdb6594579.addTo(map_c11b54252813eef6783f648b98f1d8e8);
+            marker_cluster_4459b65d0a2a6b9b9e8d2749f09f0480.addTo(map_e5015aa5b36cf66464ff4387426b3b08);
         
     
-            var layer_control_c4ec9aa7812d6f43521426555060e556_layers = {
+            var marker_cluster_4459b65d0a2a6b9b9e8d2749f09f0480searchControl = new L.Control.Search({
+                layer: marker_cluster_4459b65d0a2a6b9b9e8d2749f09f0480,
+                
+                propertyName: 'name',
+                
+                collapsed: false,
+                textPlaceholder: 'Поиск объектов',
+                position:'topleft',
+            
+                initial: false,
+                
+                hideMarkerOnCollapse: true
+            
+                });
+                marker_cluster_4459b65d0a2a6b9b9e8d2749f09f0480searchControl.on('search:locationfound', function(e) {
+                    marker_cluster_4459b65d0a2a6b9b9e8d2749f09f0480.setStyle(function(feature){
+                        return feature.properties.style
+                    })
+                    
+                    if(e.layer._popup)
+                        e.layer.openPopup();
+                })
+                marker_cluster_4459b65d0a2a6b9b9e8d2749f09f0480searchControl.on('search:collapsed', function(e) {
+                        marker_cluster_4459b65d0a2a6b9b9e8d2749f09f0480.setStyle(function(feature){
+                            return feature.properties.style
+                    });
+                });
+            map_e5015aa5b36cf66464ff4387426b3b08.addControl( marker_cluster_4459b65d0a2a6b9b9e8d2749f09f0480searchControl );
+
+        
+    
+            var layer_control_9a9ddf04b834632aaa059395b41b4773_layers = {
                 base_layers : {
-                    "\u0421\u043f\u0443\u0442\u043d\u0438\u043a" : tile_layer_1d288c51de1f983118b5e2f448cc73dc,
-                    "\u0421\u0445\u0435\u043c\u0430" : tile_layer_14fd33b347c7db137d79fe4db34c6079,
+                    "\u0421\u043f\u0443\u0442\u043d\u0438\u043a" : tile_layer_dd83acc3e1e88d392f4fc5a772c24149,
+                    "\u0421\u0445\u0435\u043c\u0430" : tile_layer_b45e5f374b01ba870b0b5149cebf01ba,
                 },
                 overlays :  {
-                    "\u0420\u0430\u0439\u043e\u043d\u044b" : feature_group_d135308a825e191fae8c21421ff3a01e,
-                    "\u041c\u0435\u0442\u043a\u0438" : marker_cluster_091288ac51c49d0ba2c446bdb6594579,
+                    "\u0420\u0430\u0439\u043e\u043d\u044b" : feature_group_00e9e86e7407a54c6642ec9414be8949,
+                    "\u041c\u0435\u0442\u043a\u0438" : marker_cluster_4459b65d0a2a6b9b9e8d2749f09f0480,
                 },
             };
-            let layer_control_c4ec9aa7812d6f43521426555060e556 = L.control.layers(
-                layer_control_c4ec9aa7812d6f43521426555060e556_layers.base_layers,
-                layer_control_c4ec9aa7812d6f43521426555060e556_layers.overlays,
+            let layer_control_9a9ddf04b834632aaa059395b41b4773 = L.control.layers(
+                layer_control_9a9ddf04b834632aaa059395b41b4773_layers.base_layers,
+                layer_control_9a9ddf04b834632aaa059395b41b4773_layers.overlays,
                 {
   "position": "topright",
   "collapsed": true,
   "autoZIndex": true,
 }
-            ).addTo(map_c11b54252813eef6783f648b98f1d8e8);
+            ).addTo(map_e5015aa5b36cf66464ff4387426b3b08);
 
         
 </script>
