@@ -33,7 +33,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_473ad0195b433214f8011cd0e727ede0 {
+                #map_b8999fbf1bbf1c11d3588d77befc8268 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -64,14 +64,14 @@
     
     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
     
-            <div class="folium-map" id="map_473ad0195b433214f8011cd0e727ede0" ></div>
+            <div class="folium-map" id="map_b8999fbf1bbf1c11d3588d77befc8268" ></div>
         
 </body>
 <script>
     
     
-            var map_473ad0195b433214f8011cd0e727ede0 = L.map(
-                "map_473ad0195b433214f8011cd0e727ede0",
+            var map_b8999fbf1bbf1c11d3588d77befc8268 = L.map(
+                "map_b8999fbf1bbf1c11d3588d77befc8268",
                 {
                     center: [57.6261, 39.8845],
                     crs: L.CRS.EPSG3857,
@@ -89,7 +89,7 @@
 
         
     
-            var tile_layer_e99c14dc63d13e0ffff40230c4d622d7 = L.tileLayer(
+            var tile_layer_edfc13a7407deaae330ff1ebe6fdadbe = L.tileLayer(
                 "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
                 {
   "minZoom": 0,
@@ -106,10 +106,10 @@
             );
         
     
-            tile_layer_e99c14dc63d13e0ffff40230c4d622d7.addTo(map_473ad0195b433214f8011cd0e727ede0);
+            tile_layer_edfc13a7407deaae330ff1ebe6fdadbe.addTo(map_b8999fbf1bbf1c11d3588d77befc8268);
         
     
-            var tile_layer_9bb182d2604005397869ee75036f72b1 = L.tileLayer(
+            var tile_layer_14a91ae6a013fb6d8ff8521862296fa8 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -126,15 +126,15 @@
             );
         
     
-            tile_layer_9bb182d2604005397869ee75036f72b1.addTo(map_473ad0195b433214f8011cd0e727ede0);
+            tile_layer_14a91ae6a013fb6d8ff8521862296fa8.addTo(map_b8999fbf1bbf1c11d3588d77befc8268);
         
     
-            var tile_layer_41ce6154ffc84eb717ad0c73802660e5 = L.tileLayer(
+            var tile_layer_29a9255357db40844af06239e25313f6 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
-            var mini_map_f3e754e1ef4b665f249bdef8d8216462 = new L.Control.MiniMap(
-                tile_layer_41ce6154ffc84eb717ad0c73802660e5,
+            var mini_map_bc3997a86b69f62e40f9038f90e727be = new L.Control.MiniMap(
+                tile_layer_29a9255357db40844af06239e25313f6,
                 {
   "position": "bottomright",
   "width": 150,
@@ -149,62 +149,62 @@
   "minimized": false,
 }
             );
-            map_473ad0195b433214f8011cd0e727ede0.addControl(mini_map_f3e754e1ef4b665f249bdef8d8216462);
+            map_b8999fbf1bbf1c11d3588d77befc8268.addControl(mini_map_bc3997a86b69f62e40f9038f90e727be);
         
     
-            var locate_control_cc2f42999c8709aa8309f97ec3ff2624 = L.control.locate(
+            var locate_control_122169b239fd06f19d025e65ae593a6f = L.control.locate(
                 {}
-            ).addTo(map_473ad0195b433214f8011cd0e727ede0);
+            ).addTo(map_b8999fbf1bbf1c11d3588d77befc8268);
             
         
     
         function customFlyToBounds() {
             let bounds = L.latLngBounds([]);
-            map_473ad0195b433214f8011cd0e727ede0.eachLayer(function(layer) {
+            map_b8999fbf1bbf1c11d3588d77befc8268.eachLayer(function(layer) {
                 if (typeof layer.getBounds === 'function') {
                     bounds.extend(layer.getBounds());
                 }
             });
             if (bounds.isValid()) {
-                map_473ad0195b433214f8011cd0e727ede0.fitBounds(bounds, {
+                map_b8999fbf1bbf1c11d3588d77befc8268.fitBounds(bounds, {
   "padding": [0, 0],
 });
             }
         }
-        map_473ad0195b433214f8011cd0e727ede0.on('overlayadd', customFlyToBounds);
+        map_b8999fbf1bbf1c11d3588d77befc8268.on('overlayadd', customFlyToBounds);
         customFlyToBounds();
         
     
-            var feature_group_5e45a1292fb618611c8cc9e1b5705654 = L.featureGroup(
+            var feature_group_7ca4cc059faad0cd46ee98578ad051ee = L.featureGroup(
                 {
 }
             );
         
     
-            var polygon_0c6a45ca89d8cf428c5e6ba5f621f29c = L.polygon(
+            var polygon_8ceae0744e96cbcbf091a592c59901a6 = L.polygon(
                 [[[57.63616, 39.80756], [57.654512, 39.776006], [57.648671, 39.781762], [57.652583, 39.775287], [57.648892000000004, 39.778987], [57.646357, 39.774876], [57.645089, 39.77652], [57.643271, 39.776315], [57.642058, 39.780015], [57.640129, 39.778062], [57.640294, 39.776829], [57.639748, 39.776358], [57.639581, 39.777371], [57.639122, 39.777059], [57.638677, 39.778586], [57.636987, 39.776726], [57.637808, 39.769387], [57.634753, 39.767421], [57.634837, 39.773848], [57.633404, 39.78279], [57.632081, 39.788957], [57.629765, 39.794507], [57.630206, 39.796768], [57.629049, 39.797796], [57.625685, 39.799749], [57.625299, 39.80129], [57.623259, 39.80386], [57.62166, 39.807868], [57.620998, 39.810643], [57.621108, 39.815371], [57.61813, 39.828322], [57.616365, 39.832947], [57.616365, 39.832947], [57.612559, 39.833975], [57.609636, 39.837572], [57.610298, 39.840964], [57.612314, 39.845164], [57.612279, 39.849449], [57.611931, 39.851971], [57.613121, 39.867756], [57.614377, 39.871869], [57.616381, 39.874265], [57.619929, 39.885717], [57.619358, 39.888964], [57.615584, 39.898579], [57.617299, 39.891974], [57.612122, 39.913718], [57.624803, 39.908901], [57.64057, 39.893484], [57.634727, 39.871901], [57.630537, 39.869742], [57.632191, 39.856072], [57.629214, 39.847953], [57.632577, 39.830891], [57.633349, 39.820819], [57.63616, 39.80756]]],
                 {"bubblingMouseEvents": true, "color": "#e95739", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e95739", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_5e45a1292fb618611c8cc9e1b5705654);
+            ).addTo(feature_group_7ca4cc059faad0cd46ee98578ad051ee);
         
     
-        var popup_2566b95b61ed49cedfe8dcb50582e985 = L.popup({
+        var popup_48ee2c25dc839bfec2af417511a04347 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_8df15a8ea907cbd9394558ee16f8df90 = $(`<div id="html_8df15a8ea907cbd9394558ee16f8df90" style="width: 100.0%; height: 100.0%;">Кировский район</div>`)[0];
-                popup_2566b95b61ed49cedfe8dcb50582e985.setContent(html_8df15a8ea907cbd9394558ee16f8df90);
+                var html_7feec098246086c189167a5d6dbc293e = $(`<div id="html_7feec098246086c189167a5d6dbc293e" style="width: 100.0%; height: 100.0%;">Кировский район</div>`)[0];
+                popup_48ee2c25dc839bfec2af417511a04347.setContent(html_7feec098246086c189167a5d6dbc293e);
             
         
 
-        polygon_0c6a45ca89d8cf428c5e6ba5f621f29c.bindPopup(popup_2566b95b61ed49cedfe8dcb50582e985)
+        polygon_8ceae0744e96cbcbf091a592c59901a6.bindPopup(popup_48ee2c25dc839bfec2af417511a04347)
         ;
 
         
     
     
-            polygon_0c6a45ca89d8cf428c5e6ba5f621f29c.bindTooltip(
+            polygon_8ceae0744e96cbcbf091a592c59901a6.bindTooltip(
                 `<div>
                      Кировский район
                  </div>`,
@@ -214,30 +214,30 @@
             );
         
     
-            var polygon_f49b4b72d820a2016a60f47cd12789b9 = L.polygon(
+            var polygon_1b93c37043d81f432b80f6855b8ecfb2 = L.polygon(
                 [[[57.629232, 39.848236], [57.632671, 39.830521], [57.63337, 39.821218], [57.636152, 39.807486], [57.641512, 39.805426], [57.644662, 39.814505], [57.64368, 39.853641], [57.652925, 39.845348], [57.666254, 39.842503], [57.663679, 39.846241], [57.661185, 39.855167], [57.660921, 39.85901], [57.66282, 39.866], [57.657382, 39.873095], [57.654069, 39.879046], [57.640817, 39.893312], [57.634679, 39.871875], [57.630587, 39.869739], [57.631774, 39.857303], [57.632224, 39.855854], [57.629232, 39.848236]]],
                 {"bubblingMouseEvents": true, "color": "#a50026", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a50026", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_5e45a1292fb618611c8cc9e1b5705654);
+            ).addTo(feature_group_7ca4cc059faad0cd46ee98578ad051ee);
         
     
-        var popup_7495a35ece126ec051fe09e031c6cc65 = L.popup({
+        var popup_7b26a26fc3f8b4a9ed2da2fdf63d5bfb = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_d7f0ecb44a3bb9948249130c48e2e466 = $(`<div id="html_d7f0ecb44a3bb9948249130c48e2e466" style="width: 100.0%; height: 100.0%;">Ленинский район</div>`)[0];
-                popup_7495a35ece126ec051fe09e031c6cc65.setContent(html_d7f0ecb44a3bb9948249130c48e2e466);
+                var html_0931b3e35f7cec053617a74cf470b8da = $(`<div id="html_0931b3e35f7cec053617a74cf470b8da" style="width: 100.0%; height: 100.0%;">Ленинский район</div>`)[0];
+                popup_7b26a26fc3f8b4a9ed2da2fdf63d5bfb.setContent(html_0931b3e35f7cec053617a74cf470b8da);
             
         
 
-        polygon_f49b4b72d820a2016a60f47cd12789b9.bindPopup(popup_7495a35ece126ec051fe09e031c6cc65)
+        polygon_1b93c37043d81f432b80f6855b8ecfb2.bindPopup(popup_7b26a26fc3f8b4a9ed2da2fdf63d5bfb)
         ;
 
         
     
     
-            polygon_f49b4b72d820a2016a60f47cd12789b9.bindTooltip(
+            polygon_1b93c37043d81f432b80f6855b8ecfb2.bindTooltip(
                 `<div>
                      Ленинский район
                  </div>`,
@@ -247,30 +247,30 @@
             );
         
     
-            var polygon_3f1af8ef0f98f413182aa3475a80e7c2 = L.polygon(
+            var polygon_d0dcfd1ac222c94a4df58220382452ef = L.polygon(
                 [[[57.773469, 39.775086], [57.730002999999996, 39.782436], [57.711323, 39.793919], [57.683778, 39.839854], [57.656212, 39.874304], [57.625421, 39.908295], [57.606688, 39.917941], [57.566723, 39.953311], [57.551664, 39.989139], [57.551664, 40.00292], [57.551417, 40.003379], [57.554133, 40.002001], [57.570426, 39.955607], [57.583011, 39.953311], [57.595098, 39.94688], [57.59929, 39.979034], [57.607921, 39.991895], [57.625668, 39.985924], [57.626161, 39.968928], [57.656458, 39.97444], [57.682235, 39.8973], [57.699275, 39.85593], [57.713536, 39.826073], [57.723859, 39.835719], [57.773223, 39.79346], [57.773469, 39.775086]]],
                 {"bubblingMouseEvents": true, "color": "#a50026", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a50026", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_5e45a1292fb618611c8cc9e1b5705654);
+            ).addTo(feature_group_7ca4cc059faad0cd46ee98578ad051ee);
         
     
-        var popup_b4a47951ef5e7d5100b24a731982b653 = L.popup({
+        var popup_5726943d3824762b5ee397d30b2d32aa = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_5102c719f77180a59135e2d1f7f421be = $(`<div id="html_5102c719f77180a59135e2d1f7f421be" style="width: 100.0%; height: 100.0%;">Заволжский район</div>`)[0];
-                popup_b4a47951ef5e7d5100b24a731982b653.setContent(html_5102c719f77180a59135e2d1f7f421be);
+                var html_2e12abd46a65be2c169528af615043a5 = $(`<div id="html_2e12abd46a65be2c169528af615043a5" style="width: 100.0%; height: 100.0%;">Заволжский район</div>`)[0];
+                popup_5726943d3824762b5ee397d30b2d32aa.setContent(html_2e12abd46a65be2c169528af615043a5);
             
         
 
-        polygon_3f1af8ef0f98f413182aa3475a80e7c2.bindPopup(popup_b4a47951ef5e7d5100b24a731982b653)
+        polygon_d0dcfd1ac222c94a4df58220382452ef.bindPopup(popup_5726943d3824762b5ee397d30b2d32aa)
         ;
 
         
     
     
-            polygon_3f1af8ef0f98f413182aa3475a80e7c2.bindTooltip(
+            polygon_d0dcfd1ac222c94a4df58220382452ef.bindTooltip(
                 `<div>
                      Заволжский район
                  </div>`,
@@ -280,30 +280,30 @@
             );
         
     
-            var polygon_2099aaea0ce15a7446d1584096cd3a07 = L.polygon(
+            var polygon_b20de6b8b707c5d5a2ed466b5c9295c0 = L.polygon(
                 [[[57.636044, 39.80747], [57.648029, 39.782196], [57.654876, 39.775582], [57.666979, 39.76509], [57.682864, 39.746615], [57.6963, 39.744106], [57.699597, 39.746159], [57.701307, 39.758931], [57.712661, 39.758475], [57.718886, 39.745018], [57.720961, 39.747527], [57.722303, 39.739088], [57.718032, 39.729965], [57.726818, 39.72928], [57.730113, 39.740229], [57.737555, 39.730649], [57.743531, 39.731561], [57.746458, 39.764405], [57.73914, 39.771932], [57.739506, 39.779231], [57.711073999999996, 39.7936], [57.663067, 39.865447], [57.660745, 39.857692], [57.666123, 39.842182], [57.653898, 39.845147], [57.643626, 39.853814], [57.644605, 39.812303], [57.641669, 39.805689], [57.636044, 39.80747]]],
                 {"bubblingMouseEvents": true, "color": "#a50026", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a50026", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_5e45a1292fb618611c8cc9e1b5705654);
+            ).addTo(feature_group_7ca4cc059faad0cd46ee98578ad051ee);
         
     
-        var popup_c4fd11dee4d2bf91abf2640485797497 = L.popup({
+        var popup_569deef19ef6b484ace55d1b4bd3fb88 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_ce73c5b4d751846ca4063cfd05d865eb = $(`<div id="html_ce73c5b4d751846ca4063cfd05d865eb" style="width: 100.0%; height: 100.0%;">Дзержиский район</div>`)[0];
-                popup_c4fd11dee4d2bf91abf2640485797497.setContent(html_ce73c5b4d751846ca4063cfd05d865eb);
+                var html_44d7c1e75c86ca0860c04f3b37dbccf9 = $(`<div id="html_44d7c1e75c86ca0860c04f3b37dbccf9" style="width: 100.0%; height: 100.0%;">Дзержиский район</div>`)[0];
+                popup_569deef19ef6b484ace55d1b4bd3fb88.setContent(html_44d7c1e75c86ca0860c04f3b37dbccf9);
             
         
 
-        polygon_2099aaea0ce15a7446d1584096cd3a07.bindPopup(popup_c4fd11dee4d2bf91abf2640485797497)
+        polygon_b20de6b8b707c5d5a2ed466b5c9295c0.bindPopup(popup_569deef19ef6b484ace55d1b4bd3fb88)
         ;
 
         
     
     
-            polygon_2099aaea0ce15a7446d1584096cd3a07.bindTooltip(
+            polygon_b20de6b8b707c5d5a2ed466b5c9295c0.bindTooltip(
                 `<div>
                      Дзержиский район
                  </div>`,
@@ -313,30 +313,30 @@
             );
         
     
-            var polygon_910c2d0caa256924a32e531f12359f8e = L.polygon(
+            var polygon_0520cce8416672835e9f45ee6500e915 = L.polygon(
                 [[[57.619737, 39.886297], [57.601428, 39.876734], [57.591476, 39.860762], [57.581839, 39.851888], [57.530751, 39.781492], [57.544113, 39.732787], [57.584169, 39.794901], [57.591476, 39.794507], [57.59317, 39.801803], [57.610954, 39.786619], [57.617197, 39.801606], [57.625767, 39.788], [57.626931, 39.789971], [57.616245, 39.832564], [57.611377, 39.833944], [57.609261, 39.837296], [57.612118, 39.845381], [57.614129, 39.872199], [57.618538, 39.880547], [57.619737, 39.886297]]],
                 {"bubblingMouseEvents": true, "color": "#d9ef8b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d9ef8b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_5e45a1292fb618611c8cc9e1b5705654);
+            ).addTo(feature_group_7ca4cc059faad0cd46ee98578ad051ee);
         
     
-        var popup_38c73ea7b9d4843bd8093e8845957ed1 = L.popup({
+        var popup_08666351be0d7b946b7ebb008e844c36 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_1cc3ad3c1816bb4618b8a9556d66ea71 = $(`<div id="html_1cc3ad3c1816bb4618b8a9556d66ea71" style="width: 100.0%; height: 100.0%;">Красноперекопский район</div>`)[0];
-                popup_38c73ea7b9d4843bd8093e8845957ed1.setContent(html_1cc3ad3c1816bb4618b8a9556d66ea71);
+                var html_76e06a9ed5be128de84d048da5a8e367 = $(`<div id="html_76e06a9ed5be128de84d048da5a8e367" style="width: 100.0%; height: 100.0%;">Красноперекопский район</div>`)[0];
+                popup_08666351be0d7b946b7ebb008e844c36.setContent(html_76e06a9ed5be128de84d048da5a8e367);
             
         
 
-        polygon_910c2d0caa256924a32e531f12359f8e.bindPopup(popup_38c73ea7b9d4843bd8093e8845957ed1)
+        polygon_0520cce8416672835e9f45ee6500e915.bindPopup(popup_08666351be0d7b946b7ebb008e844c36)
         ;
 
         
     
     
-            polygon_910c2d0caa256924a32e531f12359f8e.bindTooltip(
+            polygon_0520cce8416672835e9f45ee6500e915.bindTooltip(
                 `<div>
                      Красноперекопский район
                  </div>`,
@@ -346,30 +346,30 @@
             );
         
     
-            var polygon_6121d411ea0beed4737334bc0d84f3c8 = L.polygon(
+            var polygon_e7ca30a09f5d3cdbcc6f97d5963999b8 = L.polygon(
                 [[[57.619737, 39.886297], [57.61729, 39.891953], [57.612476, 39.9136], [57.566116, 39.955895], [57.550857, 40.003018], [57.546081, 40.002632], [57.537461, 39.986409], [57.531956, 39.950294], [57.537877, 39.931367], [57.531229, 39.936003], [57.525827, 39.919973], [57.533099, 39.918621], [57.542031, 39.901432], [57.546496, 39.912827], [57.551168, 39.890038], [57.55937, 39.898342], [57.561134, 39.884823], [57.554075, 39.879416], [57.559681, 39.855275], [57.570371, 39.858365], [57.575247, 39.844073], [57.590704, 39.860682], [57.601384, 39.876905], [57.619737, 39.886297]]],
-                {"bubblingMouseEvents": true, "color": "#b3de72", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b3de72", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_5e45a1292fb618611c8cc9e1b5705654);
+                {"bubblingMouseEvents": true, "color": "#98d268", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98d268", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(feature_group_7ca4cc059faad0cd46ee98578ad051ee);
         
     
-        var popup_103575dc755b4348cec5adf96c54d209 = L.popup({
+        var popup_66402075a91c0856130d265bf45cd8c8 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_b126635587c2fa887f5da228cb5f68c2 = $(`<div id="html_b126635587c2fa887f5da228cb5f68c2" style="width: 100.0%; height: 100.0%;">Фрунзенсикй район</div>`)[0];
-                popup_103575dc755b4348cec5adf96c54d209.setContent(html_b126635587c2fa887f5da228cb5f68c2);
+                var html_2ef3a69152068056d87f60d043135f84 = $(`<div id="html_2ef3a69152068056d87f60d043135f84" style="width: 100.0%; height: 100.0%;">Фрунзенсикй район</div>`)[0];
+                popup_66402075a91c0856130d265bf45cd8c8.setContent(html_2ef3a69152068056d87f60d043135f84);
             
         
 
-        polygon_6121d411ea0beed4737334bc0d84f3c8.bindPopup(popup_103575dc755b4348cec5adf96c54d209)
+        polygon_e7ca30a09f5d3cdbcc6f97d5963999b8.bindPopup(popup_66402075a91c0856130d265bf45cd8c8)
         ;
 
         
     
     
-            polygon_6121d411ea0beed4737334bc0d84f3c8.bindTooltip(
+            polygon_e7ca30a09f5d3cdbcc6f97d5963999b8.bindTooltip(
                 `<div>
                      Фрунзенсикй район
                  </div>`,
@@ -379,41 +379,41 @@
             );
         
     
-            feature_group_5e45a1292fb618611c8cc9e1b5705654.addTo(map_473ad0195b433214f8011cd0e727ede0);
+            feature_group_7ca4cc059faad0cd46ee98578ad051ee.addTo(map_b8999fbf1bbf1c11d3588d77befc8268);
         
     
-            var marker_cluster_5f91f0131b76538aacdfd0655912ed05 = L.markerClusterGroup(
+            var marker_cluster_32febac212759132e984b2f2c3df14bf = L.markerClusterGroup(
                 {
 }
             );
         
     
-            var marker_01a418a4b4e7feb10a66ca7111d1dc4d = L.marker(
+            var marker_d924ae0d25e69b0fe9b36aca7ddc1c08 = L.marker(
                 [57.629377, 39.890388],
                 {
   "name": "\u041c\u0438\u043d\u0438\u0441\u0442\u0435\u0440\u0441\u0442\u0432\u043e \u0437\u0434\u0440\u0430\u0432\u043e\u043e\u0445\u0440\u0430\u043d\u0435\u043d\u0438\u044f \u0438 \u0444\u0430\u0440\u043c\u0430\u0446\u0438\u0438",
 }
-            ).addTo(marker_cluster_5f91f0131b76538aacdfd0655912ed05);
+            ).addTo(marker_cluster_32febac212759132e984b2f2c3df14bf);
         
     
-        var popup_70c4c34174d3930c6ec2a1986a5092ac = L.popup({
+        var popup_5cf529ffcd05b60002745202f5f6a315 = L.popup({
   "maxWidth": 150,
 });
 
         
             
-                var html_0c9c49bae047e37a5df8fcb515d21c09 = $(`<div id="html_0c9c49bae047e37a5df8fcb515d21c09" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Министерство здравоохранения и фармации</h4>             <p><b>📍 Адрес:</b> Ул. Советская 11/9</p>             <p>Здание историческое и ввиду этого не оборудовано для людей с ОВЗ</p>             <p><b>Оценка:</b> 0/10 <span style="color:gold; font-size:1.2em;">☆☆☆☆☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/1.jpg" data-lightbox="gallery" data-title="Министерство здравоохранения и фармации">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/2.jpg" data-lightbox="gallery" data-title="Министерство здравоохранения и фармации">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
-                popup_70c4c34174d3930c6ec2a1986a5092ac.setContent(html_0c9c49bae047e37a5df8fcb515d21c09);
+                var html_6ed68dc8ca73976afdf96258482fb54b = $(`<div id="html_6ed68dc8ca73976afdf96258482fb54b" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Министерство здравоохранения и фармации</h4>             <p><b>📍 Адрес:</b> Ул. Советская 11/9</p>             <p>Здание историческое и ввиду этого не оборудовано для людей с ОВЗ</p>             <p><b>Оценка:</b> 0/10 <span style="color:gold; font-size:1.2em;">☆☆☆☆☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/1.jpg" data-lightbox="gallery" data-title="Министерство здравоохранения и фармации">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/2.jpg" data-lightbox="gallery" data-title="Министерство здравоохранения и фармации">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_здравоохранения_и_фармации/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
+                popup_5cf529ffcd05b60002745202f5f6a315.setContent(html_6ed68dc8ca73976afdf96258482fb54b);
             
         
 
-        marker_01a418a4b4e7feb10a66ca7111d1dc4d.bindPopup(popup_70c4c34174d3930c6ec2a1986a5092ac)
+        marker_d924ae0d25e69b0fe9b36aca7ddc1c08.bindPopup(popup_5cf529ffcd05b60002745202f5f6a315)
         ;
 
         
     
     
-            marker_01a418a4b4e7feb10a66ca7111d1dc4d.bindTooltip(
+            marker_d924ae0d25e69b0fe9b36aca7ddc1c08.bindTooltip(
                 `<div>
                      Министерство здравоохранения и фармации
                  </div>`,
@@ -423,32 +423,32 @@
             );
         
     
-            var marker_3399696f89bc42823acc1923db42eb13 = L.marker(
+            var marker_e14145e81a7a54022ecbcab637dd56d7 = L.marker(
                 [57.62848, 39.892051],
                 {
   "name": "\u041c\u0438\u043d\u0438\u0441\u0442\u0435\u0440\u0441\u0442\u0432\u043e \u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u043d\u0438\u044f",
 }
-            ).addTo(marker_cluster_5f91f0131b76538aacdfd0655912ed05);
+            ).addTo(marker_cluster_32febac212759132e984b2f2c3df14bf);
         
     
-        var popup_c23de04d833f72a3f77c689cd45d0d91 = L.popup({
+        var popup_3c90d4de008524db8f22c1aacb66c7d6 = L.popup({
   "maxWidth": 150,
 });
 
         
             
-                var html_68d3b5b68769ea186b96ed3bd2d535d5 = $(`<div id="html_68d3b5b68769ea186b96ed3bd2d535d5" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Министерство образования</h4>             <p><b>📍 Адрес:</b> Советская улица, 7</p>             <p>Есть кнопка для вызова персонала. Здание историческое, дверь очень тяжёлая</p>             <p><b>Оценка:</b> 2/10 <span style="color:gold; font-size:1.2em;">★★☆☆☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/1.jpg" data-lightbox="gallery" data-title="Министерство образования">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/2.jpg" data-lightbox="gallery" data-title="Министерство образования">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
-                popup_c23de04d833f72a3f77c689cd45d0d91.setContent(html_68d3b5b68769ea186b96ed3bd2d535d5);
+                var html_d180bb6a08f8d5ba0c4a826538c43871 = $(`<div id="html_d180bb6a08f8d5ba0c4a826538c43871" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Министерство образования</h4>             <p><b>📍 Адрес:</b> Советская улица, 7</p>             <p>Есть кнопка для вызова персонала. Здание историческое, дверь очень тяжёлая</p>             <p><b>Оценка:</b> 2/10 <span style="color:gold; font-size:1.2em;">★★☆☆☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/1.jpg" data-lightbox="gallery" data-title="Министерство образования">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/2.jpg" data-lightbox="gallery" data-title="Министерство образования">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Министерство_образования/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
+                popup_3c90d4de008524db8f22c1aacb66c7d6.setContent(html_d180bb6a08f8d5ba0c4a826538c43871);
             
         
 
-        marker_3399696f89bc42823acc1923db42eb13.bindPopup(popup_c23de04d833f72a3f77c689cd45d0d91)
+        marker_e14145e81a7a54022ecbcab637dd56d7.bindPopup(popup_3c90d4de008524db8f22c1aacb66c7d6)
         ;
 
         
     
     
-            marker_3399696f89bc42823acc1923db42eb13.bindTooltip(
+            marker_e14145e81a7a54022ecbcab637dd56d7.bindTooltip(
                 `<div>
                      Министерство образования
                  </div>`,
@@ -458,32 +458,32 @@
             );
         
     
-            var marker_50303d4c7de765f15a6673aa94b5acd0 = L.marker(
+            var marker_2e63a735449becba288da38b6fdf4d5e = L.marker(
                 [57.626349, 39.890393],
                 {
   "name": "\u042f\u0440\u0413\u0423 \u0438\u043c. \u041f. \u0413. \u0414\u0435\u043c\u0438\u0434\u043e\u0432\u0430, \u043a\u043e\u0440\u043f\u0443\u0441 \u2116 2",
 }
-            ).addTo(marker_cluster_5f91f0131b76538aacdfd0655912ed05);
+            ).addTo(marker_cluster_32febac212759132e984b2f2c3df14bf);
         
     
-        var popup_b2078a4c61ee39a1c4d346035754c51e = L.popup({
+        var popup_e37785f9211f9bf4e73976c631890727 = L.popup({
   "maxWidth": 150,
 });
 
         
             
-                var html_0f220a32b8a821d0d2d6ffe815711ef9 = $(`<div id="html_0f220a32b8a821d0d2d6ffe815711ef9" style="width: 100.0%; height: 100.0%;">         <div>             <h4>ЯрГУ им. П. Г. Демидова, корпус № 2</h4>             <p><b>📍 Адрес:</b> Ул. Кирова 8/10</p>             <p>Историческое здание, но есть кнопка для вызова персонала. Опять тяжёлая дверь</p>             <p><b>Оценка:</b> 3/10 <span style="color:gold; font-size:1.2em;">★★★☆☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/1.jpg" data-lightbox="gallery" data-title="ЯрГУ им. П. Г. Демидова, корпус № 2">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/2.jpg" data-lightbox="gallery" data-title="ЯрГУ им. П. Г. Демидова, корпус № 2">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
-                popup_b2078a4c61ee39a1c4d346035754c51e.setContent(html_0f220a32b8a821d0d2d6ffe815711ef9);
+                var html_5656a6f8ed280488491ed78e9e0e27a8 = $(`<div id="html_5656a6f8ed280488491ed78e9e0e27a8" style="width: 100.0%; height: 100.0%;">         <div>             <h4>ЯрГУ им. П. Г. Демидова, корпус № 2</h4>             <p><b>📍 Адрес:</b> Ул. Кирова 8/10</p>             <p>Историческое здание, но есть кнопка для вызова персонала. Опять тяжёлая дверь</p>             <p><b>Оценка:</b> 3/10 <span style="color:gold; font-size:1.2em;">★★★☆☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/1.jpg" data-lightbox="gallery" data-title="ЯрГУ им. П. Г. Демидова, корпус № 2">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/2.jpg" data-lightbox="gallery" data-title="ЯрГУ им. П. Г. Демидова, корпус № 2">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ЯрГУ_им._П._Г._Демидова,_корпус_№_2/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
+                popup_e37785f9211f9bf4e73976c631890727.setContent(html_5656a6f8ed280488491ed78e9e0e27a8);
             
         
 
-        marker_50303d4c7de765f15a6673aa94b5acd0.bindPopup(popup_b2078a4c61ee39a1c4d346035754c51e)
+        marker_2e63a735449becba288da38b6fdf4d5e.bindPopup(popup_e37785f9211f9bf4e73976c631890727)
         ;
 
         
     
     
-            marker_50303d4c7de765f15a6673aa94b5acd0.bindTooltip(
+            marker_2e63a735449becba288da38b6fdf4d5e.bindTooltip(
                 `<div>
                      ЯрГУ им. П. Г. Демидова, корпус № 2
                  </div>`,
@@ -493,32 +493,32 @@
             );
         
     
-            var marker_bc379b1d2093f00e9fcf2fb1d081cd77 = L.marker(
+            var marker_48c90173ce16fd79db42c9a3c098b25a = L.marker(
                 [57.576745, 39.842952],
                 {
   "name": "\u0422\u0426 \u0428\u043e\u043a\u043e\u043b\u0430\u0434",
 }
-            ).addTo(marker_cluster_5f91f0131b76538aacdfd0655912ed05);
+            ).addTo(marker_cluster_32febac212759132e984b2f2c3df14bf);
         
     
-        var popup_e9ab6ae285329cc5919815907b535f62 = L.popup({
+        var popup_d67f1394d75922bd632a82276625a90b = L.popup({
   "maxWidth": 150,
 });
 
         
             
-                var html_c15472989ad8940abea0de2c356bae92 = $(`<div id="html_c15472989ad8940abea0de2c356bae92" style="width: 100.0%; height: 100.0%;">         <div>             <h4>ТЦ Шоколад</h4>             <p><b>📍 Адрес:</b> Московский проспект, 108</p>             <p>Шрифт Брайля с картой здания есть Лифт для инвалидов есть Туалетов для лиц с ОВЗ нет. Инвалиду на коляске вполне будет комфортно</p>             <p><b>Оценка:</b> 7/10 <span style="color:gold; font-size:1.2em;">★★★★★★★☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/1.jpg" data-lightbox="gallery" data-title="ТЦ Шоколад">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/2.jpg" data-lightbox="gallery" data-title="ТЦ Шоколад">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/3.jpg" data-lightbox="gallery" data-title="ТЦ Шоколад">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/3.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/4.jpg" data-lightbox="gallery" data-title="ТЦ Шоколад">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/4.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/5.jpg" data-lightbox="gallery" data-title="ТЦ Шоколад">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/5.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/6.jpg" data-lightbox="gallery" data-title="ТЦ Шоколад">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/6.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
-                popup_e9ab6ae285329cc5919815907b535f62.setContent(html_c15472989ad8940abea0de2c356bae92);
+                var html_d9458478c596851e8f8eb42ecc9eadb5 = $(`<div id="html_d9458478c596851e8f8eb42ecc9eadb5" style="width: 100.0%; height: 100.0%;">         <div>             <h4>ТЦ Шоколад</h4>             <p><b>📍 Адрес:</b> Московский проспект, 108</p>             <p>Шрифт Брайля с картой здания есть Лифт для инвалидов есть Туалетов для лиц с ОВЗ нет. Инвалиду на коляске вполне будет комфортно</p>             <p><b>Оценка:</b> 7/10 <span style="color:gold; font-size:1.2em;">★★★★★★★☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/1.jpg" data-lightbox="gallery" data-title="ТЦ Шоколад">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/2.jpg" data-lightbox="gallery" data-title="ТЦ Шоколад">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/3.jpg" data-lightbox="gallery" data-title="ТЦ Шоколад">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/3.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/4.jpg" data-lightbox="gallery" data-title="ТЦ Шоколад">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/4.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/5.jpg" data-lightbox="gallery" data-title="ТЦ Шоколад">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/5.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/6.jpg" data-lightbox="gallery" data-title="ТЦ Шоколад">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ТЦ_Шоколад/6.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
+                popup_d67f1394d75922bd632a82276625a90b.setContent(html_d9458478c596851e8f8eb42ecc9eadb5);
             
         
 
-        marker_bc379b1d2093f00e9fcf2fb1d081cd77.bindPopup(popup_e9ab6ae285329cc5919815907b535f62)
+        marker_48c90173ce16fd79db42c9a3c098b25a.bindPopup(popup_d67f1394d75922bd632a82276625a90b)
         ;
 
         
     
     
-            marker_bc379b1d2093f00e9fcf2fb1d081cd77.bindTooltip(
+            marker_48c90173ce16fd79db42c9a3c098b25a.bindTooltip(
                 `<div>
                      ТЦ Шоколад
                  </div>`,
@@ -528,32 +528,32 @@
             );
         
     
-            var marker_15501dfa5da2f0c7b12c0e82f69c0588 = L.marker(
+            var marker_7a86b3187487c88b2f687c71fde3757a = L.marker(
                 [57.574986, 39.847652],
                 {
   "name": "\u0410\u043f\u0442\u0435\u043a\u0430 \u0410\u043f\u0440\u0435\u043b\u044c",
 }
-            ).addTo(marker_cluster_5f91f0131b76538aacdfd0655912ed05);
+            ).addTo(marker_cluster_32febac212759132e984b2f2c3df14bf);
         
     
-        var popup_e993670351a431ae2daf1076e4814b90 = L.popup({
+        var popup_35fba958ada1f1cc64c074225e9fc395 = L.popup({
   "maxWidth": 150,
 });
 
         
             
-                var html_6ec8efe8b0872a1be65b6aebed921c97 = $(`<div id="html_6ec8efe8b0872a1be65b6aebed921c97" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Аптека Апрель</h4>             <p><b>📍 Адрес:</b> Ул. Калинина 5</p>             <p>Обычная аптека без кнопки вызова персонала, но заехать можно</p>             <p><b>Оценка:</b> 5/10 <span style="color:gold; font-size:1.2em;">★★★★★☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Аптека_Апрель/1.jpg" data-lightbox="gallery" data-title="Аптека Апрель">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Аптека_Апрель/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Аптека_Апрель/2.jpg" data-lightbox="gallery" data-title="Аптека Апрель">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Аптека_Апрель/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
-                popup_e993670351a431ae2daf1076e4814b90.setContent(html_6ec8efe8b0872a1be65b6aebed921c97);
+                var html_440b654287475e2ad295b5a579dcc890 = $(`<div id="html_440b654287475e2ad295b5a579dcc890" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Аптека Апрель</h4>             <p><b>📍 Адрес:</b> Ул. Калинина 5</p>             <p>Обычная аптека без кнопки вызова персонала, но заехать можно</p>             <p><b>Оценка:</b> 5/10 <span style="color:gold; font-size:1.2em;">★★★★★☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Аптека_Апрель/1.jpg" data-lightbox="gallery" data-title="Аптека Апрель">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Аптека_Апрель/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Аптека_Апрель/2.jpg" data-lightbox="gallery" data-title="Аптека Апрель">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Аптека_Апрель/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
+                popup_35fba958ada1f1cc64c074225e9fc395.setContent(html_440b654287475e2ad295b5a579dcc890);
             
         
 
-        marker_15501dfa5da2f0c7b12c0e82f69c0588.bindPopup(popup_e993670351a431ae2daf1076e4814b90)
+        marker_7a86b3187487c88b2f687c71fde3757a.bindPopup(popup_35fba958ada1f1cc64c074225e9fc395)
         ;
 
         
     
     
-            marker_15501dfa5da2f0c7b12c0e82f69c0588.bindTooltip(
+            marker_7a86b3187487c88b2f687c71fde3757a.bindTooltip(
                 `<div>
                      Аптека Апрель
                  </div>`,
@@ -563,32 +563,32 @@
             );
         
     
-            var marker_0bba427f1ff04e32993e94ffdc870d15 = L.marker(
+            var marker_b1558dc9e63ef0b18ebd0cd1b9e84b28 = L.marker(
                 [57.580921000000004, 39.849374],
                 {
   "name": "\u0414\u041a \u041d\u0435\u0444\u0442\u044f\u043d\u0438\u043a",
 }
-            ).addTo(marker_cluster_5f91f0131b76538aacdfd0655912ed05);
+            ).addTo(marker_cluster_32febac212759132e984b2f2c3df14bf);
         
     
-        var popup_b71750f05bf13ffd9eb3f21f5500d58f = L.popup({
+        var popup_0418451cde1130018a917375f84f1509 = L.popup({
   "maxWidth": 150,
 });
 
         
             
-                var html_d43f57f6c8695e068792282c36afb138 = $(`<div id="html_d43f57f6c8695e068792282c36afb138" style="width: 100.0%; height: 100.0%;">         <div>             <h4>ДК Нефтяник</h4>             <p><b>📍 Адрес:</b> Московский проспект, 92</p>             <p>Пандус есть, Наземные тактильные указатели для слепых и слабовидящих есть, Таблички доступности есть</p>             <p><b>Оценка:</b> 7/10 <span style="color:gold; font-size:1.2em;">★★★★★★★☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/1.jpg" data-lightbox="gallery" data-title="ДК Нефтяник">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/2.jpg" data-lightbox="gallery" data-title="ДК Нефтяник">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/3.jpg" data-lightbox="gallery" data-title="ДК Нефтяник">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/3.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/4.jpg" data-lightbox="gallery" data-title="ДК Нефтяник">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/4.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/5.jpg" data-lightbox="gallery" data-title="ДК Нефтяник">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/5.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
-                popup_b71750f05bf13ffd9eb3f21f5500d58f.setContent(html_d43f57f6c8695e068792282c36afb138);
+                var html_95b1cd68e70b20961649de1f0fdc0199 = $(`<div id="html_95b1cd68e70b20961649de1f0fdc0199" style="width: 100.0%; height: 100.0%;">         <div>             <h4>ДК Нефтяник</h4>             <p><b>📍 Адрес:</b> Московский проспект, 92</p>             <p>Пандус есть, Наземные тактильные указатели для слепых и слабовидящих есть, Таблички доступности есть</p>             <p><b>Оценка:</b> 7/10 <span style="color:gold; font-size:1.2em;">★★★★★★★☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/1.jpg" data-lightbox="gallery" data-title="ДК Нефтяник">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/2.jpg" data-lightbox="gallery" data-title="ДК Нефтяник">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/3.jpg" data-lightbox="gallery" data-title="ДК Нефтяник">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/3.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/4.jpg" data-lightbox="gallery" data-title="ДК Нефтяник">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/4.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/5.jpg" data-lightbox="gallery" data-title="ДК Нефтяник">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/ДК_Нефтяник/5.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
+                popup_0418451cde1130018a917375f84f1509.setContent(html_95b1cd68e70b20961649de1f0fdc0199);
             
         
 
-        marker_0bba427f1ff04e32993e94ffdc870d15.bindPopup(popup_b71750f05bf13ffd9eb3f21f5500d58f)
+        marker_b1558dc9e63ef0b18ebd0cd1b9e84b28.bindPopup(popup_0418451cde1130018a917375f84f1509)
         ;
 
         
     
     
-            marker_0bba427f1ff04e32993e94ffdc870d15.bindTooltip(
+            marker_b1558dc9e63ef0b18ebd0cd1b9e84b28.bindTooltip(
                 `<div>
                      ДК Нефтяник
                  </div>`,
@@ -598,32 +598,32 @@
             );
         
     
-            var marker_379b5fff662f883bfd9beaea052ba729 = L.marker(
+            var marker_2ee902a64bb8d6f4dd9cf18aa1337f2b = L.marker(
                 [57.57981, 39.847679],
                 {
   "name": "\u0414\u043e\u043c \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u044b",
 }
-            ).addTo(marker_cluster_5f91f0131b76538aacdfd0655912ed05);
+            ).addTo(marker_cluster_32febac212759132e984b2f2c3df14bf);
         
     
-        var popup_b5344e309822fa9d7e4ff181d3bdcf9a = L.popup({
+        var popup_9ef07dc50ae072ce90fc7b5ded2cbba2 = L.popup({
   "maxWidth": 150,
 });
 
         
             
-                var html_28a526e58aabc0f354c76d1a290ca9fc = $(`<div id="html_28a526e58aabc0f354c76d1a290ca9fc" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Дом культуры</h4>             <p><b>📍 Адрес:</b> Ул. Курчатова 3</p>             <p>Пандуса нет, но есть кнопка для инвалидов до которой инвалиду никак не дотянуться. Внутр. Есть карта с шрифтом Брайля. Лифта и туалета для инвалидов нет</p>             <p><b>Оценка:</b> 4/10 <span style="color:gold; font-size:1.2em;">★★★★☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/1.jpg" data-lightbox="gallery" data-title="Дом культуры">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/2.jpg" data-lightbox="gallery" data-title="Дом культуры">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/3.jpg" data-lightbox="gallery" data-title="Дом культуры">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/3.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/4.jpg" data-lightbox="gallery" data-title="Дом культуры">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/4.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/5.jpg" data-lightbox="gallery" data-title="Дом культуры">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/5.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/6.jpg" data-lightbox="gallery" data-title="Дом культуры">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/6.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
-                popup_b5344e309822fa9d7e4ff181d3bdcf9a.setContent(html_28a526e58aabc0f354c76d1a290ca9fc);
+                var html_62c356c173f20d79acd3df2c04f3ff77 = $(`<div id="html_62c356c173f20d79acd3df2c04f3ff77" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Дом культуры</h4>             <p><b>📍 Адрес:</b> Ул. Курчатова 3</p>             <p>Пандуса нет, но есть кнопка для инвалидов до которой инвалиду никак не дотянуться. Внутр. Есть карта с шрифтом Брайля. Лифта и туалета для инвалидов нет</p>             <p><b>Оценка:</b> 4/10 <span style="color:gold; font-size:1.2em;">★★★★☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/1.jpg" data-lightbox="gallery" data-title="Дом культуры">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/2.jpg" data-lightbox="gallery" data-title="Дом культуры">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/3.jpg" data-lightbox="gallery" data-title="Дом культуры">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/3.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/4.jpg" data-lightbox="gallery" data-title="Дом культуры">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/4.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/5.jpg" data-lightbox="gallery" data-title="Дом культуры">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/5.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/6.jpg" data-lightbox="gallery" data-title="Дом культуры">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Дом_культуры/6.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
+                popup_9ef07dc50ae072ce90fc7b5ded2cbba2.setContent(html_62c356c173f20d79acd3df2c04f3ff77);
             
         
 
-        marker_379b5fff662f883bfd9beaea052ba729.bindPopup(popup_b5344e309822fa9d7e4ff181d3bdcf9a)
+        marker_2ee902a64bb8d6f4dd9cf18aa1337f2b.bindPopup(popup_9ef07dc50ae072ce90fc7b5ded2cbba2)
         ;
 
         
     
     
-            marker_379b5fff662f883bfd9beaea052ba729.bindTooltip(
+            marker_2ee902a64bb8d6f4dd9cf18aa1337f2b.bindTooltip(
                 `<div>
                      Дом культуры
                  </div>`,
@@ -633,32 +633,32 @@
             );
         
     
-            var marker_67d9ec4bfd231416f0b3e5c6ee2f2191 = L.marker(
+            var marker_0018a2f28292fffcab775373925257d3 = L.marker(
                 [57.580622, 39.852841],
                 {
   "name": "\u0421\u043f\u043e\u0440\u0442\u043c\u0430\u0441\u0442\u0435\u0440",
 }
-            ).addTo(marker_cluster_5f91f0131b76538aacdfd0655912ed05);
+            ).addTo(marker_cluster_32febac212759132e984b2f2c3df14bf);
         
     
-        var popup_c10f5c909330f02a9289bc6606b6eba6 = L.popup({
+        var popup_8f88efe90b5dbf1eab0aa772cdc32778 = L.popup({
   "maxWidth": 150,
 });
 
         
             
-                var html_ce7b72693a68f4d0daf467a8dd6008e9 = $(`<div id="html_ce7b72693a68f4d0daf467a8dd6008e9" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Спортмастер</h4>             <p><b>📍 Адрес:</b> Московский проспект, 159А/39</p>             <p>Пандус есть , Пандус есть, Наземные тактильные указатели для слепых есть , перемещение инвалидов внутри возможно</p>             <p><b>Оценка:</b> 5/10 <span style="color:gold; font-size:1.2em;">★★★★★☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Спортмастер/1.jpg" data-lightbox="gallery" data-title="Спортмастер">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Спортмастер/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Спортмастер/2.jpg" data-lightbox="gallery" data-title="Спортмастер">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Спортмастер/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
-                popup_c10f5c909330f02a9289bc6606b6eba6.setContent(html_ce7b72693a68f4d0daf467a8dd6008e9);
+                var html_b5a36a383fec385eadc26e7d4f701232 = $(`<div id="html_b5a36a383fec385eadc26e7d4f701232" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Спортмастер</h4>             <p><b>📍 Адрес:</b> Московский проспект, 159А/39</p>             <p>Пандус есть , Пандус есть, Наземные тактильные указатели для слепых есть , перемещение инвалидов внутри возможно</p>             <p><b>Оценка:</b> 5/10 <span style="color:gold; font-size:1.2em;">★★★★★☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Спортмастер/1.jpg" data-lightbox="gallery" data-title="Спортмастер">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Спортмастер/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Спортмастер/2.jpg" data-lightbox="gallery" data-title="Спортмастер">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Спортмастер/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
+                popup_8f88efe90b5dbf1eab0aa772cdc32778.setContent(html_b5a36a383fec385eadc26e7d4f701232);
             
         
 
-        marker_67d9ec4bfd231416f0b3e5c6ee2f2191.bindPopup(popup_c10f5c909330f02a9289bc6606b6eba6)
+        marker_0018a2f28292fffcab775373925257d3.bindPopup(popup_8f88efe90b5dbf1eab0aa772cdc32778)
         ;
 
         
     
     
-            marker_67d9ec4bfd231416f0b3e5c6ee2f2191.bindTooltip(
+            marker_0018a2f28292fffcab775373925257d3.bindTooltip(
                 `<div>
                      Спортмастер
                  </div>`,
@@ -668,32 +668,32 @@
             );
         
     
-            var marker_a86b4b14ad49ffacd04d94ba8c93bc21 = L.marker(
+            var marker_63dff19fb6a30ae88ff3168ce97a0174 = L.marker(
                 [57.583999, 39.855669],
                 {
   "name": "\u0421\u0431\u0435\u0440\u0431\u0430\u043d\u043a",
 }
-            ).addTo(marker_cluster_5f91f0131b76538aacdfd0655912ed05);
+            ).addTo(marker_cluster_32febac212759132e984b2f2c3df14bf);
         
     
-        var popup_60bb790a20cfa11aa4d7c44832cf8f2f = L.popup({
+        var popup_4569be3dc90a7d1be2b3a6384d95477e = L.popup({
   "maxWidth": 150,
 });
 
         
             
-                var html_a7d17e09c91a2c94417edba48cdbe8e5 = $(`<div id="html_a7d17e09c91a2c94417edba48cdbe8e5" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Сбербанк</h4>             <p><b>📍 Адрес:</b> Московский проспект, 153</p>             <p>Удобный заезд. Есть шрифт Брайля. Присутствуют тактильно-наземные указатели. Кнопка для для вызова персонала. Все банкоматы на удобном уровне для инвалидов на коляске</p>             <p><b>Оценка:</b> 10/10 <span style="color:gold; font-size:1.2em;">★★★★★★★★★★</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/1.jpg" data-lightbox="gallery" data-title="Сбербанк">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/2.jpg" data-lightbox="gallery" data-title="Сбербанк">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/3.jpg" data-lightbox="gallery" data-title="Сбербанк">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/3.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/4.jpg" data-lightbox="gallery" data-title="Сбербанк">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/4.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/5.jpg" data-lightbox="gallery" data-title="Сбербанк">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/5.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/6.jpg" data-lightbox="gallery" data-title="Сбербанк">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/6.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
-                popup_60bb790a20cfa11aa4d7c44832cf8f2f.setContent(html_a7d17e09c91a2c94417edba48cdbe8e5);
+                var html_5f72fe5b258505b833839c3c0e52bb2a = $(`<div id="html_5f72fe5b258505b833839c3c0e52bb2a" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Сбербанк</h4>             <p><b>📍 Адрес:</b> Московский проспект, 153</p>             <p>Удобный заезд. Есть шрифт Брайля. Присутствуют тактильно-наземные указатели. Кнопка для для вызова персонала. Все банкоматы на удобном уровне для инвалидов на коляске</p>             <p><b>Оценка:</b> 10/10 <span style="color:gold; font-size:1.2em;">★★★★★★★★★★</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/1.jpg" data-lightbox="gallery" data-title="Сбербанк">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/2.jpg" data-lightbox="gallery" data-title="Сбербанк">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/3.jpg" data-lightbox="gallery" data-title="Сбербанк">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/3.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/4.jpg" data-lightbox="gallery" data-title="Сбербанк">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/4.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/5.jpg" data-lightbox="gallery" data-title="Сбербанк">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/5.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/6.jpg" data-lightbox="gallery" data-title="Сбербанк">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Сбербанк/6.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
+                popup_4569be3dc90a7d1be2b3a6384d95477e.setContent(html_5f72fe5b258505b833839c3c0e52bb2a);
             
         
 
-        marker_a86b4b14ad49ffacd04d94ba8c93bc21.bindPopup(popup_60bb790a20cfa11aa4d7c44832cf8f2f)
+        marker_63dff19fb6a30ae88ff3168ce97a0174.bindPopup(popup_4569be3dc90a7d1be2b3a6384d95477e)
         ;
 
         
     
     
-            marker_a86b4b14ad49ffacd04d94ba8c93bc21.bindTooltip(
+            marker_63dff19fb6a30ae88ff3168ce97a0174.bindTooltip(
                 `<div>
                      Сбербанк
                  </div>`,
@@ -703,32 +703,32 @@
             );
         
     
-            var marker_1c098461c307de4c35f9890eb36fc767 = L.marker(
+            var marker_8207bec94c7757d6e5d019ccb7553836 = L.marker(
                 [57.58474, 39.856213],
                 {
   "name": "\u0414\u043e\u0434\u043e \u043f\u0438\u0446\u0446\u0430",
 }
-            ).addTo(marker_cluster_5f91f0131b76538aacdfd0655912ed05);
+            ).addTo(marker_cluster_32febac212759132e984b2f2c3df14bf);
         
     
-        var popup_94c6ce88267ca84a53ea3cc0e955f89c = L.popup({
+        var popup_9aca0e16074dfcda90c034bc2013bf49 = L.popup({
   "maxWidth": 150,
 });
 
         
             
-                var html_009e3af477717c9887dc9df6f359fee3 = $(`<div id="html_009e3af477717c9887dc9df6f359fee3" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Додо пицца</h4>             <p><b>📍 Адрес:</b> Московский проспект, 153/59</p>             <p>Есть кнопка для вызова персонала и удобный пандус</p>             <p><b>Оценка:</b> 7/10 <span style="color:gold; font-size:1.2em;">★★★★★★★☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Додо_пицца/1.jpg" data-lightbox="gallery" data-title="Додо пицца">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Додо_пицца/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Додо_пицца/2.jpg" data-lightbox="gallery" data-title="Додо пицца">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Додо_пицца/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Додо_пицца/3.jpg" data-lightbox="gallery" data-title="Додо пицца">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Додо_пицца/3.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
-                popup_94c6ce88267ca84a53ea3cc0e955f89c.setContent(html_009e3af477717c9887dc9df6f359fee3);
+                var html_4f84825e69efec3ee61ad84725b48226 = $(`<div id="html_4f84825e69efec3ee61ad84725b48226" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Додо пицца</h4>             <p><b>📍 Адрес:</b> Московский проспект, 153/59</p>             <p>Есть кнопка для вызова персонала и удобный пандус</p>             <p><b>Оценка:</b> 7/10 <span style="color:gold; font-size:1.2em;">★★★★★★★☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Додо_пицца/1.jpg" data-lightbox="gallery" data-title="Додо пицца">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Додо_пицца/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Додо_пицца/2.jpg" data-lightbox="gallery" data-title="Додо пицца">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Додо_пицца/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Додо_пицца/3.jpg" data-lightbox="gallery" data-title="Додо пицца">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Додо_пицца/3.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
+                popup_9aca0e16074dfcda90c034bc2013bf49.setContent(html_4f84825e69efec3ee61ad84725b48226);
             
         
 
-        marker_1c098461c307de4c35f9890eb36fc767.bindPopup(popup_94c6ce88267ca84a53ea3cc0e955f89c)
+        marker_8207bec94c7757d6e5d019ccb7553836.bindPopup(popup_9aca0e16074dfcda90c034bc2013bf49)
         ;
 
         
     
     
-            marker_1c098461c307de4c35f9890eb36fc767.bindTooltip(
+            marker_8207bec94c7757d6e5d019ccb7553836.bindTooltip(
                 `<div>
                      Додо пицца
                  </div>`,
@@ -738,32 +738,32 @@
             );
         
     
-            var marker_1827624da38a0dad8ef80d18489cd0b9 = L.marker(
+            var marker_d2d9b5f069357cc0f73fb38376d9d936 = L.marker(
                 [57.592838, 39.863863],
                 {
   "name": "\u041d\u0430\u0434\u0437\u0435\u043c\u043d\u044b\u0439 \u043f\u0435\u0448\u0435\u0445\u043e\u0434\u043d\u044b\u0439 \u043f\u0435\u0440\u0435\u0445\u043e\u0434",
 }
-            ).addTo(marker_cluster_5f91f0131b76538aacdfd0655912ed05);
+            ).addTo(marker_cluster_32febac212759132e984b2f2c3df14bf);
         
     
-        var popup_6380741973424a647a13c40a7111e792 = L.popup({
+        var popup_3928738081b60104d14751019f23d1fe = L.popup({
   "maxWidth": 150,
 });
 
         
             
-                var html_3b943631f4dc4d025cb4355db1ef88cf = $(`<div id="html_3b943631f4dc4d025cb4355db1ef88cf" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Надземный пешеходный переход</h4>             <p><b>📍 Адрес:</b> Улица Гоголя</p>             <p>Пандус есть , лифт есть (не работает), лестница без указателей</p>             <p><b>Оценка:</b> 1/10 <span style="color:gold; font-size:1.2em;">★☆☆☆☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Надземный_пешеходный_переход/1.jpg" data-lightbox="gallery" data-title="Надземный пешеходный переход">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Надземный_пешеходный_переход/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Надземный_пешеходный_переход/2.jpg" data-lightbox="gallery" data-title="Надземный пешеходный переход">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Надземный_пешеходный_переход/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Надземный_пешеходный_переход/3.jpg" data-lightbox="gallery" data-title="Надземный пешеходный переход">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Надземный_пешеходный_переход/3.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
-                popup_6380741973424a647a13c40a7111e792.setContent(html_3b943631f4dc4d025cb4355db1ef88cf);
+                var html_2d189e3d8e354850683173598698eec3 = $(`<div id="html_2d189e3d8e354850683173598698eec3" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Надземный пешеходный переход</h4>             <p><b>📍 Адрес:</b> Улица Гоголя</p>             <p>Пандус есть , лифт есть (не работает), лестница без указателей</p>             <p><b>Оценка:</b> 1/10 <span style="color:gold; font-size:1.2em;">★☆☆☆☆☆☆☆☆☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Надземный_пешеходный_переход/1.jpg" data-lightbox="gallery" data-title="Надземный пешеходный переход">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Надземный_пешеходный_переход/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Надземный_пешеходный_переход/2.jpg" data-lightbox="gallery" data-title="Надземный пешеходный переход">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Надземный_пешеходный_переход/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Надземный_пешеходный_переход/3.jpg" data-lightbox="gallery" data-title="Надземный пешеходный переход">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Надземный_пешеходный_переход/3.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
+                popup_3928738081b60104d14751019f23d1fe.setContent(html_2d189e3d8e354850683173598698eec3);
             
         
 
-        marker_1827624da38a0dad8ef80d18489cd0b9.bindPopup(popup_6380741973424a647a13c40a7111e792)
+        marker_d2d9b5f069357cc0f73fb38376d9d936.bindPopup(popup_3928738081b60104d14751019f23d1fe)
         ;
 
         
     
     
-            marker_1827624da38a0dad8ef80d18489cd0b9.bindTooltip(
+            marker_d2d9b5f069357cc0f73fb38376d9d936.bindTooltip(
                 `<div>
                      Надземный пешеходный переход
                  </div>`,
@@ -773,11 +773,46 @@
             );
         
     
-            marker_cluster_5f91f0131b76538aacdfd0655912ed05.addTo(map_473ad0195b433214f8011cd0e727ede0);
+            var marker_e61bed50a9a0d51af82f3dc0ab56cd98 = L.marker(
+                [57.58579, 39.857575],
+                {
+  "name": "\u042f\u0440\u043e\u0441\u043b\u0430\u0432\u0441\u043a\u0438\u0439 \u0444\u0438\u043b\u0438\u0430\u043b \u041f\u0413\u0423\u041f\u0421",
+}
+            ).addTo(marker_cluster_32febac212759132e984b2f2c3df14bf);
         
     
-            var marker_cluster_5f91f0131b76538aacdfd0655912ed05searchControl = new L.Control.Search({
-                layer: marker_cluster_5f91f0131b76538aacdfd0655912ed05,
+        var popup_06104ee97b860fe31bfd7a78937d1a9a = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_997a5b987c9c545fa819cd70cc9a6305 = $(`<div id="html_997a5b987c9c545fa819cd70cc9a6305" style="width: 100.0%; height: 100.0%;">         <div>             <h4>Ярославский филиал ПГУПС</h4>             <p><b>📍 Адрес:</b> Московский проспект, 151</p>             <p>Пандуса нет, подъёмник для инвалидов есть (но не подключен), парковка для инвалидов есть, шрифт брайля есть, есть место для собаки-повадыря.</p>             <p><b>Оценка:</b> 9/10 <span style="color:gold; font-size:1.2em;">★★★★★★★★★☆</span></p>             <div style="display:flex; flex-wrap:wrap;">             <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/1.jpg" data-lightbox="gallery" data-title="Ярославский филиал ПГУПС">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/1.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/2.jpg" data-lightbox="gallery" data-title="Ярославский филиал ПГУПС">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/2.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/3.jpg" data-lightbox="gallery" data-title="Ярославский филиал ПГУПС">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/3.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/4.jpg" data-lightbox="gallery" data-title="Ярославский филиал ПГУПС">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/4.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/5.jpg" data-lightbox="gallery" data-title="Ярославский филиал ПГУПС">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/5.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/6.jpg" data-lightbox="gallery" data-title="Ярославский филиал ПГУПС">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/6.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/7.jpg" data-lightbox="gallery" data-title="Ярославский филиал ПГУПС">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/7.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/8.jpg" data-lightbox="gallery" data-title="Ярославский филиал ПГУПС">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/8.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>                      <a href="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/9.jpg" data-lightbox="gallery" data-title="Ярославский филиал ПГУПС">                 <img src="https://raw.githubusercontent.com/KopatychDisko/for_image/main/image/Ярославский_филиал_ПГУПС/9.jpg" width="60" height="60" style="object-fit:cover; margin:2px; border-radius:5px;" />             </a>         </div>         </div>     </div>`)[0];
+                popup_06104ee97b860fe31bfd7a78937d1a9a.setContent(html_997a5b987c9c545fa819cd70cc9a6305);
+            
+        
+
+        marker_e61bed50a9a0d51af82f3dc0ab56cd98.bindPopup(popup_06104ee97b860fe31bfd7a78937d1a9a)
+        ;
+
+        
+    
+    
+            marker_e61bed50a9a0d51af82f3dc0ab56cd98.bindTooltip(
+                `<div>
+                     Ярославский филиал ПГУПС
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_32febac212759132e984b2f2c3df14bf.addTo(map_b8999fbf1bbf1c11d3588d77befc8268);
+        
+    
+            var marker_cluster_32febac212759132e984b2f2c3df14bfsearchControl = new L.Control.Search({
+                layer: marker_cluster_32febac212759132e984b2f2c3df14bf,
                 
                 propertyName: 'name',
                 
@@ -792,8 +827,8 @@
                 hideMarkerOnCollapse: true
             
                 });
-                marker_cluster_5f91f0131b76538aacdfd0655912ed05searchControl.on('search:locationfound', function(e) {
-                    marker_cluster_5f91f0131b76538aacdfd0655912ed05.setStyle(function(feature){
+                marker_cluster_32febac212759132e984b2f2c3df14bfsearchControl.on('search:locationfound', function(e) {
+                    marker_cluster_32febac212759132e984b2f2c3df14bf.setStyle(function(feature){
                         return feature.properties.style
                     })
                     
@@ -808,34 +843,34 @@
                     if(e.layer._popup)
                         e.layer.openPopup();
                 })
-                marker_cluster_5f91f0131b76538aacdfd0655912ed05searchControl.on('search:collapsed', function(e) {
-                        marker_cluster_5f91f0131b76538aacdfd0655912ed05.setStyle(function(feature){
+                marker_cluster_32febac212759132e984b2f2c3df14bfsearchControl.on('search:collapsed', function(e) {
+                        marker_cluster_32febac212759132e984b2f2c3df14bf.setStyle(function(feature){
                             return feature.properties.style
                     });
                 });
-            map_473ad0195b433214f8011cd0e727ede0.addControl( marker_cluster_5f91f0131b76538aacdfd0655912ed05searchControl );
+            map_b8999fbf1bbf1c11d3588d77befc8268.addControl( marker_cluster_32febac212759132e984b2f2c3df14bfsearchControl );
 
         
     
-            var layer_control_07bc194824b0f2949f3764fd5e50eb73_layers = {
+            var layer_control_628461ba999b3351a3bf3e4b33e7ccaf_layers = {
                 base_layers : {
-                    "\u0421\u043f\u0443\u0442\u043d\u0438\u043a" : tile_layer_e99c14dc63d13e0ffff40230c4d622d7,
-                    "\u0421\u0445\u0435\u043c\u0430" : tile_layer_9bb182d2604005397869ee75036f72b1,
+                    "\u0421\u043f\u0443\u0442\u043d\u0438\u043a" : tile_layer_edfc13a7407deaae330ff1ebe6fdadbe,
+                    "\u0421\u0445\u0435\u043c\u0430" : tile_layer_14a91ae6a013fb6d8ff8521862296fa8,
                 },
                 overlays :  {
-                    "\u0420\u0430\u0439\u043e\u043d\u044b" : feature_group_5e45a1292fb618611c8cc9e1b5705654,
-                    "\u041c\u0435\u0442\u043a\u0438" : marker_cluster_5f91f0131b76538aacdfd0655912ed05,
+                    "\u0420\u0430\u0439\u043e\u043d\u044b" : feature_group_7ca4cc059faad0cd46ee98578ad051ee,
+                    "\u041c\u0435\u0442\u043a\u0438" : marker_cluster_32febac212759132e984b2f2c3df14bf,
                 },
             };
-            let layer_control_07bc194824b0f2949f3764fd5e50eb73 = L.control.layers(
-                layer_control_07bc194824b0f2949f3764fd5e50eb73_layers.base_layers,
-                layer_control_07bc194824b0f2949f3764fd5e50eb73_layers.overlays,
+            let layer_control_628461ba999b3351a3bf3e4b33e7ccaf = L.control.layers(
+                layer_control_628461ba999b3351a3bf3e4b33e7ccaf_layers.base_layers,
+                layer_control_628461ba999b3351a3bf3e4b33e7ccaf_layers.overlays,
                 {
   "position": "topright",
   "collapsed": true,
   "autoZIndex": true,
 }
-            ).addTo(map_473ad0195b433214f8011cd0e727ede0);
+            ).addTo(map_b8999fbf1bbf1c11d3588d77befc8268);
 
         
 </script>
